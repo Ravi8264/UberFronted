@@ -65,7 +65,6 @@
               "optimization": true,
               "sourceMap": false,
               "namedChunks": false,
-              "extractCss": true,
               "aot": true,
               "buildOptimizer": true,
               "serviceWorker": true
