@@ -67,7 +67,7 @@
               "namedChunks": false,
               "aot": true,
               "buildOptimizer": true,
-              "serviceWorker": true
+              "serviceWorker": false
             },
             "development": {
               "buildOptimizer": false,
