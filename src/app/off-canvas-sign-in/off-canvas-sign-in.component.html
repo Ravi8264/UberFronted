@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+
+<div class="offcanvas-body" style="background-color: #fff">
+  <!-- First Row of Boxes -->
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mb-3">
+      <div class="box1" (click)="navigateTo('sign-in-drive')">
+        <h1 class="text">Sign in to drive & deliver</h1>
+        <h1 class="icon">
+          <i class="bx bx-right-arrow-alt"></i>
+        </h1>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mb-3">
+      <div class="box1" (click)="navigateTo('signup')">
+        <h1 class="text">Create a rider account</h1>
+        <h1 class="icon">
+          <i class="bx bx-right-arrow-alt"></i>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Row of Boxes -->
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mb-3">
+      <div class="box1" (click)="navigateTo('uber-eats')">
+        <h1 class="text">Sign in to order delivery with Uber Eats</h1>
+        <h1 class="icon">
+          <i class="bx bx-right-arrow-alt"></i>
+        </h1>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mb-3">
+      <div class="box1" (click)="navigateTo('uber-business')">
+        <h1 class="text">Sign in to your Uber for Business account</h1>
+        <h1 class="icon">
+          <i class="bx bx-right-arrow-alt"></i>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>

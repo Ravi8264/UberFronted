@@ -1,0 +1,180 @@
+<div >
+  <nav class="navbar navbar-expand-lg navbar-dark  py-3" style="background-color:black">
+    <div class="container">
+      <a
+        class="navbar-brand custom-btn"
+        routerLink="/home"
+        aria-label="Go to Uber homepage"
+        >Uber</a
+      >
+
+      <div
+        class="navbar-toggler "
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      
+      >
+      <div style="display: flex;">
+
+        <p class="nav-item " style="display: flex;">
+          <a
+            class="nav-link text-white custom-btn"
+            style="
+              font-size: 1rem;
+              padding: 10px 20px;
+              transition: background-color 0.3s;
+            "
+            routerLink="/login"
+            >Login</a
+          >
+        </p>
+        
+        <p class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/off-canvas-sign-in"
+            style="
+              font-size: 1rem;
+              padding: 10px 20px;
+              background-color: #fff;
+              color:black;
+              border-radius:20px
+              "         
+            
+            >Sign Up</a
+          >
+  
+        </p>
+
+      </div>
+  
+      </div>
+
+
+
+   
+
+      <div class="collapse navbar-collapse ">
+        <div class="navbar-nav me-auto">
+          <a
+            class="nav-link text-white custom-btn"
+            style="
+              font-size: 1rem;
+              padding: 10px 20px;
+           
+            "
+            routerLink="/ride"
+            >Ride</a
+          >
+          <a
+            class="nav-link text-white custom-btn"
+            style="
+              font-size: 1rem;
+              padding: 10px 20px;
+              transition: background-color 0.3s;
+            "
+            routerLink="/driver"
+         
+            >Driver</a
+          >
+        
+
+
+      <li class="nav-item dropdown ">
+        <a class="nav-link text-white"   (click)="toggleDropdown()" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+          <i *ngIf="dropdown" class="fa fa-chevron-up select-icon select-icon-up ms-2"></i>
+          <i *ngIf="!dropdown" class="fa fa-chevron-down select-icon select-icon-down ms-2"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" *ngFor="let item of items" class="dropdown-item" style="margin-bottom: 10px;z-index:5;  color: black;">
+            {{ item }}
+          </a>
+        </div>
+      </li>
+
+
+        </div>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white custom-btn"
+              style="
+                font-size: 1rem;
+                padding: 10px 20px;
+                transition: background-color 0.3s;
+              "
+              routerLink="/language"
+              >Language</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link text-white custom-btn"
+              style="
+                font-size: 1rem;
+                padding: 10px 20px;
+                transition: background-color 0.3s;
+              "
+              routerLink="/help"
+              >Help</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link text-white custom-btn"
+              style="
+                font-size: 1rem;
+                padding: 10px 20px;
+                transition: background-color 0.3s;
+              "
+              routerLink="/login"
+              >Login</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/off-canvas-sign-in"
+              style="
+                font-size: 1rem;
+                padding: 10px 20px;
+                background-color: #fff;
+                color:black;
+                border-radius:20px
+                "         
+              
+              >Sign Up</a
+            >
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  
+    
+  
+  
+
+  
+  <!-- New Login Offcanvas -->
+
+  
+    
+  </div>
+
+
+  
+

@@ -1,0 +1,26 @@
+.offcanvas-body {
+    background-color: #fff;
+  }
+  
+  .box1 {
+    display: flex;
+    height: 280px;
+    justify-content: space-between;
+    width: 400px;
+    border-bottom: 2px solid black;
+    margin: 80px;
+    align-items: center;
+  }
+  
+  .text {
+    font-size: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  

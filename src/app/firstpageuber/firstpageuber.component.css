@@ -1,0 +1,43 @@
+.underline-text {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.underline-text::before,
+.underline-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin-bottom: -8px;
+}
+
+.underline-text::before {
+  background-color: rgb(169, 169, 169);
+}
+
+.underline-text::after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.underline-text:hover::after {
+  transform: scaleX(1);
+  background-color: black;
+}
+
+ @media (max-width: 767px) {
+  .section1,
+  .section3 {
+    display: flex;
+    flex-direction: column-reverse; 
+  } 
+
+  
+}
+
+

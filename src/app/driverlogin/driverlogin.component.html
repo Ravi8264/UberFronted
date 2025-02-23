@@ -1,0 +1,62 @@
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/home" aria-label="Go to Uber homepage" style="color: white;">Uber</a>
+    </div>
+  </nav>
+  
+  <!-- Form Section -->
+  <section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex align-items-center justify-content-center h-100">
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+          <form (ngSubmit)="onLogin()">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                [(ngModel)]="email"
+                name="email"
+                required
+                id="form1Example13"
+              />
+              <label class="form-label" for="form1Example13">Email address</label>
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input
+                type="password"
+                class="form-control form-control-lg"
+                [(ngModel)]="password"
+                name="password"
+                required
+                id="form1Example23"
+              />
+              <label class="form-label" for="form1Example23">Password</label>
+            </div>
+  
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-dark btn-lg btn-block text-white">
+              Log in
+            </button>
+  
+            <!-- OR divider -->
+            <div class="divider d-flex align-items-center my-4">
+              <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+            </div>
+  
+            <!-- Google and Apple login buttons -->
+            <a class="btn btn-lg btn-block btn-outline-dark" href="#!" role="button">
+              <i class="bx bxl-google" style="margin-right: 10px;"></i> Continue with Google
+            </a>
+            <a class="btn btn-lg btn-block btn-outline-dark" href="#!" role="button">
+              <i class="bx bxl-apple" style="margin-right: 10px;"></i> Continue with Apple
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  

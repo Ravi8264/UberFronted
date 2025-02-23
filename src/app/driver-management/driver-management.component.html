@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a
+        class="navbar-brand"
+        routerLink="/home"
+        aria-label="Go to Uber homepage"
+        >Uber</a
+      >
+      
+    </div>
+  </nav>
+<div class="d-flex justify-content-center align-items-center vh-100 " style="background-color: black;">
+    <div class="card p-4 shadow-lg" style="max-width: 500px; width: 100%;">
+      <h2 class="mb-4 text-center text-white">Driver Management</h2>
+      <form [formGroup]="driverForm" (ngSubmit)="onFormSubmit()">
+        
+        <!-- Vehicle ID Input -->
+        <div class="form-group">
+          <input
+            type="text"
+            id="vehicleId"
+            class="form-control form-control-sm"
+            formControlName="vehicleId"
+            placeholder="Enter Vehicle ID"
+          />
+          <div *ngIf="driverForm.get('vehicleId')?.touched && driverForm.get('vehicleId')?.invalid">
+            <small class="text-danger">Vehicle ID is required</small>
+          </div>
+        </div>
+  
+        <!-- Aadhar Card Input -->
+        <div class="form-group">
+          <input
+            type="text"
+            id="aadharCard"
+            class="form-control form-control-sm"
+            formControlName="aadharCard"
+            placeholder="Enter Aadhar Card ID"
+          />
+          <div *ngIf="driverForm.get('aadharCard')?.touched && driverForm.get('aadharCard')?.invalid">
+            <small class="text-danger">Aadhar Card ID is required</small>
+          </div>
+        </div>
+  
+        <!-- Driving License Input -->
+        <div class="form-group">
+          <input
+            type="text"
+            id="drivingLicense"
+            class="form-control form-control-sm"
+            formControlName="drivingLicense"
+            placeholder="Enter Driving License ID"
+          />
+          <div *ngIf="driverForm.get('drivingLicense')?.touched && driverForm.get('drivingLicense')?.invalid">
+            <small class="text-danger">Driving License ID is required</small>
+          </div>
+        </div>
+  
+        <!-- Pan Card Input -->
+        <div class="form-group">
+          <input
+            type="text"
+            id="panCard"
+            class="form-control form-control-sm"
+            formControlName="panCard"
+            placeholder="Enter Pan Card ID"
+          />
+          <div *ngIf="driverForm.get('panCard')?.touched && driverForm.get('panCard')?.invalid">
+            <small class="text-danger">Pan Card ID is required</small>
+          </div>
+        </div>
+  
+        <!-- Availability Checkbox -->
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            id="available"
+            class="form-check-input"
+            formControlName="available"
+          />
+          <label class="form-check-label " for="available">Available</label>
+        </div>
+  
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="btn btn-dark btn-sm btn-block"
+          [disabled]="driverForm.invalid"
+        >
+          Assign Driver
+        </button>
+      </form>
+    </div>
+  </div>
+  
